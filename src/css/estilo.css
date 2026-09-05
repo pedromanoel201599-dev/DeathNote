@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --fundo:#0A0A0A;
     --header:#000000;
@@ -15,9 +16,11 @@
     --bordas:#292929;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
+
 
 body{
     background-color: var(--fundo);
@@ -25,7 +28,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ================= HEADER ================= */
 
 header{
     background-color:#000000;
@@ -40,12 +42,14 @@ header{
     border-bottom:1px solid var(--bordas);
 }
 
+
 nav ul{
     display:flex;
     gap:30px;
     list-style:none;
     justify-content:center;
 }
+
 
 nav a{
     color:#B3B3B3;
@@ -55,9 +59,11 @@ nav a{
     font-weight:bold;
 }
 
+
 nav a:hover{
     color:#C00000;
 }
+
 
 #logo{
     color:#FFFFFF;
@@ -67,11 +73,11 @@ nav a:hover{
     letter-spacing:2px;
 }
 
+
 #logo span{
     color:#B3B3B3;
 }
 
-/* ================= INÍCIO ================= */
 
 .index{
     background-color:#0A0A0A;
@@ -87,11 +93,13 @@ nav a:hover{
     background-position:center;
 }
 
+
 .container{
     width:100%;
     max-width:1100px;
     text-align:center;
 }
+
 
 #titulo{
     color:#FFFFFF;
@@ -100,11 +108,13 @@ nav a:hover{
     letter-spacing:4px;
 }
 
+
 #texto{
     color:#B3B3B3;
     font-size:1.5rem;
     margin-bottom:15px;
 }
+
 
 #scroll{
     color:#B3B3B3;
@@ -112,6 +122,7 @@ nav a:hover{
     font-weight:normal;
     margin-bottom:25px;
 }
+
 
 .botao{
     display:inline-block;
@@ -124,10 +135,12 @@ nav a:hover{
     font-weight:bold;
 }
 
+
 .botao:hover{
     background-color:#8B0000;
     transform:scale(1.05);
 }
+
 
 .info{
     display:flex;
@@ -135,6 +148,7 @@ nav a:hover{
     gap:60px;
     margin-top:50px;
 }
+
 
 .info div{
     display:flex;
@@ -144,17 +158,18 @@ nav a:hover{
     width:120px;
 }
 
+
 .info strong{
     color:#C00000;
     font-size:1.5rem;
 }
+
 
 .info span{
     color:#B3B3B3;
     font-size:0.9rem;
 }
 
-/* ================= HISTÓRIA ================= */
 
 .historia{
     background-color:#0A0A0A;
@@ -167,12 +182,14 @@ nav a:hover{
     border-top:1px solid #151515;
 }
 
+
 #h1-h{
     color:#FFFFFF;
     font-size:3rem;
     margin-bottom:25px;
     letter-spacing:2px;
 }
+
 
 #HISTÓRIA{
     color:#B3B3B3;
@@ -181,7 +198,6 @@ nav a:hover{
     margin-bottom:30px;
 }
 
-/* ================= PERSONAGENS ================= */
 
 .personagem{
     background-color:#0A0A0A;
@@ -195,6 +211,7 @@ nav a:hover{
     border-top:1px solid #151515;
 }
 
+
 #h1-p{
     color:#FFFFFF;
     font-size:3rem;
@@ -202,11 +219,13 @@ nav a:hover{
     letter-spacing:2px;
 }
 
+
 #explicação{
     color:#B3B3B3;
     line-height:1.5;
     font-size:0.9rem;
 }
+
 
 .card{
     display:flex;
@@ -214,6 +233,7 @@ nav a:hover{
     justify-content:center;
     flex-wrap:wrap;
 }
+
 
 .card-personagem{
     width:300px;
@@ -230,16 +250,19 @@ nav a:hover{
     transition:0.3s;
 }
 
+
 .card-personagem h2{
     color:#FFFFFF;
     margin:15px 0 8px;
 }
+
 
 .card-personagem:hover{
     background-color:#1d1d1d;
     border-color:#8B0000;
     transform:translateY(-8px);
 }
+
 
 #img-p{
     width:100%;
@@ -249,9 +272,8 @@ nav a:hover{
     object-fit:cover;
 }
 
-/* ================= CADERNO ================= */
 
-#card{
+#caderno{
     min-height:calc(100vh - 80px);
     background-color:#0A0A0A;
     display:flex;
@@ -260,6 +282,7 @@ nav a:hover{
     padding:80px 5%;
     border-top:1px solid #151515;
 }
+
 
 #card-caderno{
     width:100%;
@@ -275,16 +298,19 @@ nav a:hover{
     transition:0.3s;
 }
 
+
 #card-caderno:hover{
     border-color:#8B0000;
     transform:translateY(-5px);
 }
+
 
 #card-caderno img{
     width:280px;
     max-width:100%;
     border-radius:12px;
 }
+
 
 #card-caderno h2{
     color:#B3B3B3;
@@ -293,7 +319,6 @@ nav a:hover{
     font-weight:normal;
 }
 
-/* ================= FOOTER ================= */
 
 footer{
     background-color:#000000;
@@ -308,48 +333,57 @@ footer{
     border-top:1px solid #292929;
 }
 
-/* ================= RESPONSIVO ================= */
 
 @media(max-width:768px){
+
 
     header{
         padding:15px 3%;
     }
 
+
     nav ul{
         gap:12px;
     }
 
+
     nav a{
         font-size:0.75rem;
     }
+
 
     #logo{
         font-size:1.3rem;
         padding:10px;
     }
 
+
     #titulo{
         font-size:2.5rem;
     }
+
 
     #texto{
         font-size:1.2rem;
     }
 
+
     .info{
         gap:20px;
     }
 
+
     .card{
         gap:20px;
     }
+
 
     #card-caderno{
         flex-direction:column;
         text-align:center;
         gap:25px;
     }
+
 
     #card-caderno img{
         width:220px;
