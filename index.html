@@ -1,34 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/estilo.css">
     <title>Death Note</title>
 </head>
+
 <body>
+
     <header>
         <h1 id="logo">Death<span>Note</span></h1>
+
         <nav>
             <ul>
-                <li><a href="index.html">ÍNICIO</a></li>
-                <li><a href=personagen.html>PERSONAGENS</a></li>
-                <li><a href="historia.html">HISTÓRIA</a></li>
+                <li><a href="#inicio">ÍNICIO</a></li>
+                <li><a href="#personagens">PERSONAGENS</a></li>
+                <li><a href="#HISTÓRIA">HISTÓRIA</a></li>
+                <li><a href="#carderno">CADERNO</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
+
+    <main class="index" id="inicio">
+
         <div class="container">
-            <h2>Um caderno capaz de mudar tudo</h2>
-            <a href="./historia.html" class="botao">Ver história</a>
+
+            <h2 id="titulo">DEATH NOTE</h2>
+
+            <h2 id="texto">Um caderno capaz de mudar tudo</h2>
+
+            <h2 id="scroll">Descubra mais sobre esse mundo</h2>
+
+            <a href="#HISTÓRIA" class="botao">Ver história</a>
+
+            <div class="info">
+
+                <div>
+                    <strong>01</strong>
+                    <span>O Caderno</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Os Personagens</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>A História</span>
+                </div>
+
+            </div>
+
         </div>
+
     </main>
 
+
+    <!-- HISTÓRIA -->
+    <section class="historia" id="HISTÓRIA">
+
+        <section id="HISTÓRIA">
+
+            <div class="container">
+
+                <h1 id="h1-h">História</h1>
+
+                <h2>
+                    A história começa quando Light Yagami, um jovem estudante extremamente inteligente,
+                    encontra um misterioso caderno chamado Death Note. Ao descobrir que o caderno possui
+                    um poder sobrenatural, Light decide utilizá-lo para criar um mundo que considera
+                    perfeito. Porém, suas ações chamam a atenção de um investigador conhecido apenas
+                    como L, dando início a um intenso confronto de inteligência.
+                </h2>
+
+                <a href="#personagens" class="botao">Ver Personagens</a>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <section class="personagem" id="personagens">
+
+        <h1 id="h1-p">Personagens</h1>
+
+        <section class="card">
+
+            <div class="card-personagem">
+
+                <img id="img-p" src="./src/assets/Light.png" alt="riuk">
+
+                <h2>Light Yagami</h2>
+
+                <p id="explicação">
+                    Prodigio do Japão. Detentor do Death Note.
+                </p>
+
+            </div>
+
+
+            <div class="card-personagem">
+
+                <img id="img-p" src="./src/assets/L.png" alt="riuk">
+
+                <h2>L</h2>
+
+                <p id="explicação">
+                    Melhor detetive do mundo. Detetive do caso Kira.
+                </p>
+
+            </div>
+
+
+            <div class="card-personagem">
+
+                <img id="img-p" src="./src/assets/Riuk.png" alt="riuk">
+
+                <h2>Riuk</h2>
+
+                <p id="explicação">
+                    Dono do Death Note.
+                </p>
+
+            </div>
+
+        </section>
+
+        <a href="#caderno" class="botao">Ver Caderno</a>
+
+    </section>
+
+
+    <section id="carderno">
+
+        <div id="card-caderno">
+
+            <img src="./src/assets/caderno.png" alt="caderno">
+
+            <h2>
+                O Death Note é um misterioso caderno sobrenatural capaz de alterar o destino de uma pessoa.
+                Ao escrever um nome em suas páginas, seu poder se manifesta de uma forma que transforma
+                completamente a vida de quem o possui.
+            </h2>
+
+        </div>
+
+    </section>
+
+
     <footer>
-        <p>DEATH NOTE</p>
-        <p>Um mundo onde um caderno pode mudar tudo</p>
+
         <p>© 2026 TODOS OS DIREITOS RESERVADOS</p>
+
     </footer>
+
 </body>
 </html>
